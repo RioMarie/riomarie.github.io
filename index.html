@@ -27,7 +27,7 @@
 
     .home{
         height: 100vh;
-        padding-top: 350px;
+        padding: 350px 0;
         background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8)),url(pictures/mees.png);
         background-repeat: no-repeat;
         background-position: center;
@@ -36,16 +36,33 @@
     }
 
     .home button{
-        background: gray;
+        border-radius: 17px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: black;
+        
+    }
+
+    .home button:hover{
+        text-shadow: 0px 0px black;
+        transition: 0.3s smooth;
+        background: #808080;
         color: white;
-        border-color: gray;
+
+    }
+
+    .contact button{
+        height: 4rem;
+        background: black;
+        color: #fff;
+        font-size: 2rem;
         border-radius: 17px;
         text-transform: uppercase;
         font-weight: 600;
         text-shadow: 1px 2px black;
     }
 
-    .home button:hover{
+    .contact button:hover{
         text-shadow: 0px 0px black;
         transition: 0.3s smooth;
     }
@@ -56,7 +73,7 @@
     }
 
     img:hover{
-        opacity: .8;
+        opacity: .9;
         transition: 0.3s smooth;
     }
 
@@ -66,8 +83,15 @@
     }
     .skills{
         margin: 0;
-        padding-top: 35px;
+        padding: 150px 0;
+        background: #D0D0D0;
     }
+
+    .skills img:hover{
+        opacity: .5;
+        transition: 0.3s smooth;
+    }
+
 
     /* .carousel img{
         width: 1200px;
@@ -76,7 +100,8 @@
 
     .projects{
         margin: 0;
-        padding-top: 200px;
+        padding: 150px 0;
+        background: #E8E8E8;
     }
 
     .projects button{
@@ -93,13 +118,23 @@
         color:gray;
     }
 
+    .projects img{
+        background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8));
+    }
+
     .about{
         margin: 0;
-        padding-top: 40px;
+        padding: 150px 0;
+        background: #D8D8D8;
     }
 
     .about p{
        font-size: 16px;
+    }
+
+    .about button{
+        background: black;
+        color: #FFF;
     }
 
     .pics img{
@@ -112,16 +147,18 @@
     }
     .contact{
         margin: 0;
-        padding-top: 30px;
-        background: #b3b3b3;
-    }
-    img{
-        background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8));
-    }
-   .big{
-        font-size: 6.2rem;
+        padding: 150px 0;
+        background: #B0B0B0;
+      
     }
    
+    .big{
+        font-size: 6.2rem;
+    }
+  
+ 
+    
+ 
 
 
       
@@ -193,12 +230,11 @@
      <!-- Skills -->
 
      <!-- Use row col-(lg,md,sm)- to become responsive-->
-    <br>
-    <br>
+  
     <section id="skills" class="skills container-fluid">
     
         <div class="page-header">
-            <h1 style="text-shadow: 1px 2px black;" class="text-center big"><span class="label label-primary">My Skills</span></h1>    
+            <h1 style="text-shadow: 1px 2px black;" class="text-center big"><span class="label label-default">My Skills</span></h1>    
         </div>
 
         <div class="row container-fluid">
@@ -239,12 +275,12 @@
      <section id="projects" class="projects container-fluid">
 
      <div class="page-header">
-            <h1 style="text-shadow: 1px 2px black;" class="text-center big"><span class="label label-primary">My Projects</span></h1>    
+            <h1 style="text-shadow: 1px 2px black;" class="text-center big"><span class="label label-default">My Projects</span></h1>    
      </div>
 
             <!-- Carousel 1--> 
             <div id="RestaurantWebsite" class="row container car">
-                        <div id="myCarousel1" data-toggle="tooltip" data-placement="top" title="HTML & CSS" data-content="HTML & CSS" class="container-fluid col-lg-8 col-lg-offset-3 col-md-9 col-md-offset-2 col-sm-10 col-sm-offset-2 carousel slide" data-ride="carousel">
+                        <div id="myCarousel1" data-toggle="popover" data-placement="top" title="Technologies Used:" data-content="HTML & CSS" class="container-fluid col-lg-8 col-lg-offset-3 col-md-9 col-md-offset-2 col-sm-10 col-sm-offset-2 carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
                                 <li data-target="#myCarousel1" data-slide-to="1"></li>
@@ -284,7 +320,7 @@
                         </div>
             </div>
                 
-            <h2 class="text-center">Restaurant Website</h1>    
+            <h2 class="text-center">Restaurant Website</h2>    
             <p class="text-center">Desktop Design</p>
             <center><a href="https://riomariejunio.000webhostapp.com/" target="_blank"><button class="btn">PREVIEW</button></a></center>   
 
@@ -296,7 +332,7 @@
 
             <!-- Carousel 2--> 
             <div id="StudentAndFacultyRecord" class="row container car">
-                <div id="myCarousel2" data-toggle="tooltip" data-placement="top" title="HTML, CSS, PHP, MySql & Ajax" data-content="HTML, CSS, PHP, MySql & Ajax" class="container-fluid col-lg-8 col-lg-offset-3 col-md-9 col-md-offset-2 col-sm-10 col-sm-offset-2 carousel slide" data-ride="carousel">
+                <div id="myCarousel2" data-toggle="popover" data-placement="top" title="Technologies Used:" data-content="HTML, CSS, PHP, MySql & Ajax" class="container-fluid col-lg-8 col-lg-offset-3 col-md-9 col-md-offset-2 col-sm-10 col-sm-offset-2 carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
                         <li data-target="#myCarousel2" data-slide-to="1"></li>
@@ -336,7 +372,7 @@
                 </div>
             </div>
                 
-            <h2 class="text-center">Student & Faculty Record</h1>    
+            <h2 class="text-center">Student & Faculty Record</h2>    
             <p class="text-center">Desktop Design</p>
             <center><a href="https://riomarriejunio.000webhostapp.com/" target="_blank"><button class="btn">PREVIEW</button></a></center>
             
@@ -350,7 +386,7 @@
 
             <!--Carousel 3-->
             <div id="HeadphoneLandingPage" class="row container car">
-                    <div id="myCarousel3" data-toggle="tooltip" data-placement="top" title="HTML & CSS" data-content="HTML & CSS" class="container-fluid col-lg-8 col-lg-offset-3 col-md-9 col-md-offset-2 col-sm-10 col-sm-offset-2 carousel slide" data-ride="carousel">
+                    <div id="myCarousel3" data-toggle="popover" data-placement="top" title="Technologies Used:" data-content="HTML & CSS" class="container-fluid col-lg-8 col-lg-offset-3 col-md-9 col-md-offset-2 col-sm-10 col-sm-offset-2 carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
                         </ol>
@@ -363,7 +399,7 @@
                     </div>
             </div>
                     
-            <h2 class="text-center">Headphone Landing Page</h1>    
+            <h2 class="text-center">Headphone Landing Page</h2>    
             <p class="text-center">Desktop Design</p>
 
               
@@ -374,7 +410,7 @@
 
              <!--Carousel 4-->
              <div id="MovieTicketBooking" class="row container car">
-                    <div id="myCarousel4" data-toggle="tooltip" data-placement="top" title="HTML, Java & MSQL" data-content="HTML, Java & MSQL" class="container-fluid col-lg-8 col-lg-offset-3 col-md-9 col-md-offset-2 col-sm-10 col-sm-offset-2 carousel slide" data-ride="carousel">
+                    <div id="myCarousel4" data-placement="top" data-toggle="popover" title="Technologies Used:" data-content="HTML, Java & MSQL" class="container-fluid col-lg-8 col-lg-offset-3 col-md-9 col-md-offset-2 col-sm-10 col-sm-offset-2 carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
                         </ol>
@@ -387,7 +423,7 @@
                     </div>
             </div>
                     
-            <h2 class="text-center">Movie Ticket Booking</h1>    
+            <h2 class="text-center">Movie Ticket Booking</h2>    
             <p class="text-center">Desktop Java App Design</p>
 
     </section>
@@ -397,15 +433,11 @@
 
 
     <!-- About-->
-      <br>
-      <br>
-      <br>
-      <br>
-
-      <section id="about" class="about container">
+    
+      <section id="about" class="about container-fluid">
 
         <div class="page-header">
-            <h1 style="text-shadow: 1px 2px black;" class="text-center big"><span class="label label-primary">About Me</span></h1>    
+            <h1 style="text-shadow: 1px 2px black;" class="text-center big"><span class="label label-default">About Me</span></h1>    
         </div>
 
         <br>
@@ -413,10 +445,10 @@
             <div class="row container-fluid">
 
             <!-- Panel 1-->
-                <div class="col-md-6">
-                    <div class="panel panel-primary">
+                <div class="col-md-5 col-md-offset-1">
+                    <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 style="text-shadow: 1px 2px black;">Java Programmer</h4>
+                            <h4 style="color:black; text-shadow: 1px 1px gray;">Java Programmer</h4>
                         </div>
                         <div class="pics panel-body">
                             <img src="pictures/java.jpg" class="img-rounded img-responsive center-block">
@@ -425,7 +457,7 @@
                                 <!--MODAL -->
                                 <div class="container">
                             
-                                    <button class="btn btn-primary col-xs-12 col-sm-8 col-sm-offset-1 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1 text-center" data-toggle="modal" data-target="#myModal">View More</button>        
+                                    <button class="btn btn-default col-xs-12 col-sm-12 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1 text-center" data-toggle="modal" data-target="#myModal">View More</button>        
                                     
                                     <div class="modal fade" id="myModal">
                                         <div class="modal-dialog">
@@ -445,7 +477,7 @@
                                                         <br> 
                                                         <br>
                                                         &nbsp;&nbsp;&nbsp;&nbsp;
-							Regarding the programming languages, most of the time, I spent it using
+                                                        Regarding the programming languages, most of the time, I spent it using
                                                         Java. I also have basic knowledge using PHP and JavaScript programming languages, 
                                                         because usually these programming languages share similar syntax, they just differ 
                                                         in structure of words. Thorough practices and numerous amount of times are 
@@ -466,10 +498,10 @@
 
 
                 <!-- Panel 2-->
-                <div class="col-md-6">
-                    <div class="panel panel-primary">
+                <div class="col-md-5">
+                    <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 style="text-shadow: 1px 2px black;">Web Designer</h4>
+                            <h4 style="color:black; text-shadow: 1px 1px gray;">Web Designer</h4>
                         </div>
                         <div class="pics panel-body">
                             <img src="pictures/web.jpg" class="img-rounded img-responsive center-block">
@@ -478,7 +510,7 @@
                                 <!--MODAL -->
                                 <div class="container">
                             
-                                    <button class="btn btn-primary col-xs-12 col-sm-8 col-sm-offset-1 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1 text-center" data-toggle="modal" data-target="#myModal2">View More</button>        
+                                    <button class="btn btn-default col-xs-12 col-sm-12 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1 text-center" data-toggle="modal" data-target="#myModal2">View More</button>        
                                     
                                     <div class="modal fade" id="myModal2">
                                         <div class="modal-dialog">
@@ -513,18 +545,14 @@
                 </div>
             </div>
        </section>
-    <br>
-    <br>
-    <br>
-    <br>
-  
 
 
     <!-- CONTACT -->
+    
 
     <section id="contact" class="contact container-fluid">
             <div class="page-header">
-                    <h1 class="text-center big" style="text-shadow: 1px 2px black;"><span class="label label-primary">Contact Me</span></h1>
+                    <h1 class="text-center big" style="text-shadow: 1px 2px black;"><span class="label label-default">Get In Touch</span></h1>
                     <br>
             </div>
 
@@ -555,12 +583,8 @@
                 </div>
 
                 <div class="form-group">
-                    <button class="form-control col-md-12 btn btn-primary">SUBMIT</button>
-                    <br>
-                    <br>  
-                    <br>
-                    <br>  
-                </div>  
+                    <button class="form-control col-md-12 btn btn-default">SUBMIT</button>
+                
             </form>
             <br>   
     </section>
